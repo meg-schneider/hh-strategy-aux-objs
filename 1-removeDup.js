@@ -39,7 +39,7 @@ function removeDup1(arr) {
   const output = [];
 
   // loop through input arr
-  for (let element of arr) {
+  for (const element of arr) {
     // if output array does not already include the array element
     if (!output.includes(element)) {
       // push into output
@@ -49,9 +49,6 @@ function removeDup1(arr) {
 
   return output;
 }
-
-
-
 
 
 
@@ -88,7 +85,7 @@ function removeDup2(arr) {
   const output = [];
 
   // loop through input array
-  for (let element of arr) {
+  for (const element of arr) {
     if (!seen.has(element)) {
       seen.add(element);
       output.push(element);
@@ -125,7 +122,7 @@ function removeDup3(arr) {
   const seen = new Set();
 
   // iterate through input array
-  for (let element of arr) {
+  for (const element of arr) {
     // a set will only keep unique elements, even if we add it multiple times
     seen.add(element);
   }
