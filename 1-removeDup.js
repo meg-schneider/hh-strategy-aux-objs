@@ -129,7 +129,7 @@ function removeDup3(arr) {
     // a set will only keep unique elements, even if we add it multiple times
     seen.add(element);
   }
-
+  console.log(seen);
   // spread out the set into a new array
   return [...seen];
 }
@@ -158,5 +158,5 @@ function removeDup4(arr) {
 // TESTS
 // console.log(removeDup1([3, 1, 3, 2, 9, 1]));
 // console.log(removeDup2([3, 1, 3, 2, 9, 1]));
-// console.log(removeDup3([3, 1, 3, 2, 9, 1]));
+console.log(removeDup3([3, 1, 3, 2, 9, 1]));
 console.log(removeDup4([3, 1, 3, 2, 9, 1]));
