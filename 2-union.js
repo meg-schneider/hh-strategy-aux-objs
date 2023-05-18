@@ -32,9 +32,9 @@ function union1(...arrays) {
   const output = [];
 
   // iterate through the argument arrays
-  for (let array of arrays) {
+  for (const array of arrays) {
     // for each arg array, iterate through the elements
-    for (let element of array) {
+    for (const element of array) {
       // for each element, check whether already exists in output
       if (!output.includes(element)) {
         // push in if it does not exist
@@ -58,8 +58,8 @@ function union2(...arrays) {
   // set of unique values
   const unique = new Set();
 
-  for (let array of arrays) {
-    for (let element of array) {
+  for (const array of arrays) {
+    for (const element of array) {
       // .add method on set will not add duplicates
       unique.add(element);
     }
@@ -67,5 +67,7 @@ function union2(...arrays) {
 
   return [...unique];
 }
+
+
 
 console.log(union2([1, 3, 7], [2, 3, 9], [9, 13]));

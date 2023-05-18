@@ -63,7 +63,7 @@ const obj = {
   1: 1
 }
 
-// console.log(obj);
+console.log(obj);
 
 
 
@@ -73,7 +73,7 @@ const obj = {
 // Using map to preserve order even with number characters
 
 function maxChar2(str) {
-  // start an emtpy map
+  // start an empty map
   const charMap = new Map();
 
   // iterate through string
@@ -99,6 +99,6 @@ function maxChar2(str) {
 
 
 // TEST
-// console.log(maxChar2('good morning')); // -> 'o'
-// console.log(maxChar2('abbcc')); // -> 'b'
-// console.log(maxChar2('abccb11')); // -> 'b'
+console.log(maxChar2('good morning')); // -> 'o'
+console.log(maxChar2('abbcc')); // -> 'b'
+console.log(maxChar2('abccb11')); // -> 'b'

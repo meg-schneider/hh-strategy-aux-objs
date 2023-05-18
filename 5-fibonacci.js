@@ -39,12 +39,6 @@ function auxFib(n, aux = {0: 0, 1: 1}) {
 
 
 
-
-
-
-
-
-
 console.time('nthFibonacci');
 console.log(nthFibonacci(45));
 console.timeEnd('nthFibonacci');
@@ -54,3 +48,4 @@ console.time('auxFib');
 console.log(auxFib(45));
 console.timeEnd('auxFib');
 
+// console.log(auxFib(4));

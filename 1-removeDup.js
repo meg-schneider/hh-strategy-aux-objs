@@ -91,7 +91,6 @@ function removeDup2(arr) {
       output.push(element);
     }
   }
-
   return output;
 }
 
@@ -157,3 +156,4 @@ function removeDup4(arr) {
 // console.log(removeDup2([3, 1, 3, 2, 9, 1]));
 console.log(removeDup3([3, 1, 3, 2, 9, 1]));
 console.log(removeDup4([3, 1, 3, 2, 9, 1]));
+
