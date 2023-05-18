@@ -18,7 +18,7 @@ function maxChar1(str) {
   const countObj = {};
 
   // loop through characters of the string
-  for (let char of str) {
+  for (const char of str) {
     // if there is no key with character, instantiate to 0
     if (countObj[char] === undefined) countObj[char] = 0;
     // increment the count
@@ -29,7 +29,7 @@ function maxChar1(str) {
   let maxCharCandidate;
   let maxFreq = 0;
 
-  for (let [char, freq] of Object.entries(countObj)) {
+  for (const [char, freq] of Object.entries(countObj)) {
     if (maxCharCandidate === undefined || freq > maxFreq) {
       maxCharCandidate = char;
       maxFreq = freq
@@ -77,7 +77,7 @@ function maxChar2(str) {
   const charMap = new Map();
 
   // iterate through string
-  for (let char of str) {
+  for (const char of str) {
     // if char doesn't exist in map yet, instantiate
     if (!charMap.has(char)) charMap.set(char, 0);
     charMap.set(char, charMap.get(char) + 1);
@@ -87,7 +87,7 @@ function maxChar2(str) {
   let maxCharCandidate;
   let maxFreq = 0;
 
-  for (let [char, freq] of charMap.entries()) {
+  for (const [char, freq] of charMap.entries()) {
     if (maxCharCandidate === undefined || freq > maxFreq) {
       maxCharCandidate = char;
       maxFreq = freq

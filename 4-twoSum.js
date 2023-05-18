@@ -57,7 +57,7 @@ function twoSum2(arr, target) {
   const diffs = new Set();
 
   // iterate through array
-  for (let element of arr) {
+  for (const element of arr) {
     // current element exists in diffs, we saw its complement before
     if (diffs.has(element)) return true;
     // otherwise add the complement to the diffs
